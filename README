@@ -1,0 +1,8 @@
+ADB CONNECTION
+cd "C:\Program Files\Netease\MuMuPlayer\nx_device\12.0\shell"
+ ./adb.exe devices
+  ./adb.exe connect 127.0.0.1:7555
+   ./adb.exe devices
+
+APPIUM SERVER 
+appium 

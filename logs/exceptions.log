@@ -1,0 +1,744 @@
+2025-10-25 15:45:50 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:45:50 GMT+0100 (West Africa Standard Time)","process":{"pid":11872,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45432832,"heapTotal":18833408,"heapUsed":10333048,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":1976.5},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:46:02 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:46:02 GMT+0100 (West Africa Standard Time)","process":{"pid":8868,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":46870528,"heapTotal":18100224,"heapUsed":12412176,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":1988.515},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:47:02 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:47:02 GMT+0100 (West Africa Standard Time)","process":{"pid":4936,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45817856,"heapTotal":18309120,"heapUsed":10279608,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2048.64},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:52:06 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:52:06 GMT+0100 (West Africa Standard Time)","process":{"pid":13172,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45690880,"heapTotal":18571264,"heapUsed":10344880,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2352.39},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:52:22 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:52:22 GMT+0100 (West Africa Standard Time)","process":{"pid":18704,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\server.js"],"memoryUsage":{"rss":45477888,"heapTotal":18833408,"heapUsed":10381888,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2368.187},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:55:54 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:55:54 GMT+0100 (West Africa Standard Time)","process":{"pid":472,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45531136,"heapTotal":18571264,"heapUsed":10376136,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2580.359},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:56:10 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:56:10 GMT+0100 (West Africa Standard Time)","process":{"pid":13524,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45490176,"heapTotal":18833408,"heapUsed":10340024,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2596.515},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:56:18 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:56:18 GMT+0100 (West Africa Standard Time)","process":{"pid":16572,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":47079424,"heapTotal":17838080,"heapUsed":12465408,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":2604.156},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:58:28 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:58:28 GMT+0100 (West Africa Standard Time)","process":{"pid":17092,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":49815552,"heapTotal":18100224,"heapUsed":12473944,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":2733.843},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 15:58:57 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 15:58:57 GMT+0100 (West Africa Standard Time)","process":{"pid":13256,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":47071232,"heapTotal":18100224,"heapUsed":12475328,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":2763.187},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 16:04:30 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 16:04:30 GMT+0100 (West Africa Standard Time)","process":{"pid":21280,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":47206400,"heapTotal":18100224,"heapUsed":12470896,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":3095.921},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 16:04:31 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 16:04:31 GMT+0100 (West Africa Standard Time)","process":{"pid":20064,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":47153152,"heapTotal":18100224,"heapUsed":12485400,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":3097.078},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 16:12:22 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 16:12:22 GMT+0100 (West Africa Standard Time)","process":{"pid":18840,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testserver.js"],"memoryUsage":{"rss":45731840,"heapTotal":18833408,"heapUsed":10391592,"external":1893094,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":3568.531},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 16:12:31 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 16:12:31 GMT+0100 (West Africa Standard Time)","process":{"pid":22476,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":49684480,"heapTotal":18100224,"heapUsed":12419024,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":3577.531},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 16:18:50 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 16:18:50 GMT+0100 (West Africa Standard Time)","process":{"pid":10944,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":49635328,"heapTotal":18100224,"heapUsed":12428456,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":3955.687},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-25 18:04:22 [ERROR]: uncaughtException: argument handler is required
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16) {"error":{},"exception":true,"date":"Sat Oct 25 2025 18:04:22 GMT+0100 (West Africa Standard Time)","process":{"pid":21576,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\index.js"],"memoryUsage":{"rss":46780416,"heapTotal":18100224,"heapUsed":12509368,"external":2016344,"arrayBuffers":16835}},"os":{"loadavg":[0,0,0],"uptime":10288.234},"trace":[{"column":11,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\node_modules\\router\\index.js","function":"Function.use","line":385,"method":"use","native":false},{"column":8,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\api\\routes\\otp.routes.js","function":null,"line":7,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false}]}
+TypeError: argument handler is required
+    at Function.use (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\node_modules\router\index.js:385:11)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\api\routes\otp.routes.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+2025-10-27 18:51:09 [ERROR]: uncaughtException: extractOTP is not defined
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19) {"error":{},"exception":true,"date":"Mon Oct 27 2025 18:51:09 GMT+0100 (West Africa Standard Time)","process":{"pid":15824,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testwhatsapp.js"],"memoryUsage":{"rss":37842944,"heapTotal":11546624,"heapUsed":7481160,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":20233.218},"trace":[{"column":3,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\utils\\helpers.js","function":null,"line":76,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\whatsapp\\elementInteraction.js","function":null,"line":3,"method":null,"native":false}]}
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19)
+2025-10-27 18:51:36 [ERROR]: uncaughtException: extractOTP is not defined
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19) {"error":{},"exception":true,"date":"Mon Oct 27 2025 18:51:36 GMT+0100 (West Africa Standard Time)","process":{"pid":4708,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testwhatsapp.js"],"memoryUsage":{"rss":37646336,"heapTotal":11546624,"heapUsed":7447520,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":20260.328},"trace":[{"column":3,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\utils\\helpers.js","function":null,"line":76,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\whatsapp\\elementInteraction.js","function":null,"line":3,"method":null,"native":false}]}
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19)
+2025-10-28 08:13:06 [ERROR]: uncaughtException: extractOTP is not defined
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19) {"error":{},"exception":true,"date":"Tue Oct 28 2025 08:13:06 GMT+0100 (West Africa Standard Time)","process":{"pid":12364,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\testwhatsapp.js"],"memoryUsage":{"rss":37625856,"heapTotal":11546624,"heapUsed":7453632,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":1767.093},"trace":[{"column":3,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\utils\\helpers.js","function":null,"line":76,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-opt-bot\\src\\whatsapp\\elementInteraction.js","function":null,"line":3,"method":null,"native":false}]}
+ReferenceError: extractOTP is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\utils\helpers.js:76:3)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-opt-bot\src\whatsapp\elementInteraction.js:3:19)
+2025-11-04 07:11:40 [ERROR]: uncaughtException: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"]},"exception":true,"date":"Tue Nov 04 2025 07:11:40 GMT+0100 (West Africa Standard Time)","process":{"pid":17252,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":43106304,"heapTotal":11546624,"heapUsed":7658856,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2131.406},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1244,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1070,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false}]}
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-11-04 07:12:30 [ERROR]: uncaughtException: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"]},"exception":true,"date":"Tue Nov 04 2025 07:12:30 GMT+0100 (West Africa Standard Time)","process":{"pid":15864,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":43253760,"heapTotal":11546624,"heapUsed":7604584,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2181.546},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1244,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1070,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false}]}
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-11-04 16:01:59 [ERROR]: uncaughtException: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"]},"exception":true,"date":"Tue Nov 04 2025 16:01:59 GMT+0100 (West Africa Standard Time)","process":{"pid":12324,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":40169472,"heapTotal":11546624,"heapUsed":7608296,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":617.546},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1244,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1070,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false}]}
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-11-04 16:03:23 [ERROR]: uncaughtException: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"]},"exception":true,"date":"Tue Nov 04 2025 16:03:23 GMT+0100 (West Africa Standard Time)","process":{"pid":17244,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":42250240,"heapTotal":11546624,"heapUsed":7595008,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":701.593},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1244,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1070,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false}]}
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-11-04 19:52:04 [ERROR]: uncaughtException: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32) {"error":{"code":"MODULE_NOT_FOUND","requireStack":["C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"]},"exception":true,"date":"Tue Nov 04 2025 19:52:04 GMT+0100 (West Africa Standard Time)","process":{"pid":5316,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":43667456,"heapTotal":11808768,"heapUsed":7615880,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2002.14},"trace":[{"column":15,"file":"node:internal/modules/cjs/loader","function":"Function._resolveFilename","line":1244,"method":"_resolveFilename","native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1070,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1335,"method":"require","native":false},{"column":16,"file":"node:internal/modules/helpers","function":"require","line":136,"method":null,"native":false},{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\twilio.js","function":null,"line":1,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false}]}
+Error: Cannot find module 'twilio'
+Require stack:
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js
+- C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.require (node:internal/modules/cjs/loader:1335:12)
+    at require (node:internal/modules/helpers:136:16)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\twilio.js:1:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+2025-11-09 13:54:58 [ERROR]: uncaughtException: SMSActivateProvider is not defined
+ReferenceError: SMSActivateProvider is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:12:56)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 13:54:58 GMT+0100 (West Africa Standard Time)","process":{"pid":17520,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":41517056,"heapTotal":11546624,"heapUsed":7283192,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":4941.328},"trace":[{"column":56,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":12,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+ReferenceError: SMSActivateProvider is not defined
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:12:56)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 16:09:49 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:26:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 16:09:49 GMT+0100 (West Africa Standard Time)","process":{"pid":16808,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":45670400,"heapTotal":17838080,"heapUsed":10579168,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":4422.64},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":26,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:26:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 16:30:33 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 16:30:33 GMT+0100 (West Africa Standard Time)","process":{"pid":10448,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":45629440,"heapTotal":18100224,"heapUsed":10591160,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":5666.25},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":24,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 16:35:40 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 16:35:40 GMT+0100 (West Africa Standard Time)","process":{"pid":18324,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":45776896,"heapTotal":18100224,"heapUsed":10600232,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":5972.984},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":24,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 17:16:01 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 17:16:01 GMT+0100 (West Africa Standard Time)","process":{"pid":17724,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":45596672,"heapTotal":17838080,"heapUsed":10639008,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":8394.64},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":24,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:24:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 17:37:03 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:48:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Sun Nov 09 2025 17:37:03 GMT+0100 (West Africa Standard Time)","process":{"pid":18080,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":45449216,"heapTotal":17838080,"heapUsed":10661008,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":9655.828},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":48,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:48:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-11 07:05:12 [ERROR]: uncaughtException: SMSActivate is not a function
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testfetch.js:15:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"exception":true,"date":"Tue Nov 11 2025 07:05:12 GMT+0100 (West Africa Standard Time)","process":{"pid":4464,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testfetch.js"],"memoryUsage":{"rss":52559872,"heapTotal":17838080,"heapUsed":10317472,"external":2061185,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":1192.953},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testfetch.js","function":null,"line":15,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivate is not a function
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testfetch.js:15:19)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49

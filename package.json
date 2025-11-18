@@ -1,0 +1,50 @@
+{
+    "name": "whatsapp-opt-bot",
+    "version": "1.0.0",
+    "main": "ecosystem.config.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "@wdio/cli": "^9.20.0",
+        "@wdio/local-runner": "^9.20.0",
+        "appium": "^3.1.0",
+        "axios": "^1.12.2",
+        "bull": "^4.16.5",
+        "bull-board": "^1.7.2",
+        "config": "^4.1.1",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.3",
+        "express": "^5.1.0",
+        "helmet": "^8.1.0",
+        "ioredis": "^5.8.2",
+        "joi": "^18.0.1",
+        "morgan": "^1.10.1",
+        "ngrok": "^5.0.0-beta.2",
+        "node-fetch": "^3.3.2",
+        "redis": "^5.9.0",
+        "sms-activate": "^2.0.4",
+        "sms-activate-org": "^1.2.1",
+        "twilio": "^5.10.4",
+        "uuid": "^13.0.0",
+        "webdriverio": "^9.20.0",
+        "winston": "^3.18.3",
+        "xml2js": "^0.6.2"
+    },
+    "devDependencies": {
+        "appium-uiautomator2-driver": "^6.0.2",
+        "eslint": "^9.38.0",
+        "jest": "^30.2.0",
+        "nodemon": "^3.1.10",
+        "supertest": "^7.1.4"
+    }
+}

@@ -1,0 +1,191 @@
+2025-11-09 07:42:35 [ERROR]: unhandledRejection: logger is not defined
+ReferenceError: logger is not defined
+    at testSMS (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:303:5)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:307:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"rejection":true,"date":"Sun Nov 09 2025 07:42:35 GMT+0100 (West Africa Standard Time)","process":{"pid":11864,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":52674560,"heapTotal":21913600,"heapUsed":16368776,"external":3241463,"arrayBuffers":65716}},"os":{"loadavg":[0,0,0],"uptime":1804.75},"trace":[{"column":5,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testSMS","line":303,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":307,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+ReferenceError: logger is not defined
+    at testSMS (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:303:5)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:307:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 13:01:48 [ERROR]: unhandledRejection: smsActivate is not a function
+TypeError: smsActivate is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:17:16)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:69:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:220:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5) {"error":{},"rejection":true,"date":"Sun Nov 09 2025 13:01:48 GMT+0100 (West Africa Standard Time)","process":{"pid":9596,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":49352704,"heapTotal":18100224,"heapUsed":10622648,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":1751.015},"trace":[{"column":16,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\smsactivate.js","function":"new SMSActivateProvider","line":17,"method":null,"native":false},{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":69,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":220,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false}]}
+TypeError: smsActivate is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:17:16)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:69:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:220:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2025-11-09 13:16:36 [ERROR]: unhandledRejection: SMSActivateProvider is not a constructor
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"rejection":true,"date":"Sun Nov 09 2025 13:16:36 GMT+0100 (West Africa Standard Time)","process":{"pid":8964,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":47575040,"heapTotal":18030592,"heapUsed":12422464,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":2639.14},"trace":[{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":74,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":225,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 13:47:21 [ERROR]: unhandledRejection: SMSActivateProvider is not a constructor
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"rejection":true,"date":"Sun Nov 09 2025 13:47:21 GMT+0100 (West Africa Standard Time)","process":{"pid":17936,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":47419392,"heapTotal":18030592,"heapUsed":12452248,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":4484.281},"trace":[{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":74,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":225,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 13:51:49 [ERROR]: unhandledRejection: SMSActivateProvider is not a constructor
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {"error":{},"rejection":true,"date":"Sun Nov 09 2025 13:51:49 GMT+0100 (West Africa Standard Time)","process":{"pid":13560,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":47579136,"heapTotal":18030592,"heapUsed":12430248,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":4752.484},"trace":[{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":74,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":225,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false},{"column":49,"file":"node:internal/main/run_main_module","function":null,"line":36,"method":null,"native":false}]}
+TypeError: SMSActivateProvider is not a constructor
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:74:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:225:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-11-09 14:23:35 [ERROR]: unhandledRejection: logger is not defined
+ReferenceError: logger is not defined
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:6:19)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5) {"error":{},"rejection":true,"date":"Sun Nov 09 2025 14:23:35 GMT+0100 (West Africa Standard Time)","process":{"pid":1220,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":41779200,"heapTotal":11546624,"heapUsed":7371584,"external":1832704,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":6658},"trace":[{"column":19,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\smsactivate.js","function":"new SMSActivateProvider","line":6,"method":null,"native":false},{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":83,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":235,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false}]}
+ReferenceError: logger is not defined
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:6:19)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2025-11-09 14:25:09 [ERROR]: unhandledRejection: smsActivatePkg.api is not a function
+TypeError: smsActivatePkg.api is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:16:31)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5) {"error":{},"rejection":true,"date":"Sun Nov 09 2025 14:25:09 GMT+0100 (West Africa Standard Time)","process":{"pid":2060,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":47501312,"heapTotal":18030592,"heapUsed":12383760,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":6752.484},"trace":[{"column":31,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\smsactivate.js","function":"new SMSActivateProvider","line":16,"method":null,"native":false},{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":83,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":235,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false}]}
+TypeError: smsActivatePkg.api is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:16:31)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2025-11-09 14:25:38 [ERROR]: unhandledRejection: smsActivatePkg.api is not a function
+TypeError: smsActivatePkg.api is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:16:31)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5) {"error":{},"rejection":true,"date":"Sun Nov 09 2025 14:25:38 GMT+0100 (West Africa Standard Time)","process":{"pid":11528,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":47538176,"heapTotal":18030592,"heapUsed":12425216,"external":2157985,"arrayBuffers":16659}},"os":{"loadavg":[0,0,0],"uptime":6781.078},"trace":[{"column":31,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\src\\sms\\providers\\smsactivate.js","function":"new SMSActivateProvider","line":16,"method":null,"native":false},{"column":23,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"testWithSMSActivate","line":83,"method":null,"native":false},{"column":1,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":null,"line":235,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1562,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Object..js","line":1699,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1313,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Function._load","line":1123,"method":"_load","native":false},{"column":14,"file":"node:diagnostics_channel","function":"TracingChannel.traceSync","line":322,"method":"traceSync","native":false},{"column":24,"file":"node:internal/modules/cjs/loader","function":"wrapModuleLoad","line":217,"method":null,"native":false},{"column":5,"file":"node:internal/modules/run_main","function":"Function.executeUserEntryPoint [as runMain]","line":170,"method":"executeUserEntryPoint [as runMain]","native":false}]}
+TypeError: smsActivatePkg.api is not a function
+    at new SMSActivateProvider (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\sms\providers\smsactivate.js:16:31)
+    at testWithSMSActivate (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:83:23)
+    at Object.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:235:1)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+2025-11-10 17:29:05 [ERROR]: unhandledRejection: OTP timeout after 180 seconds for activation 4393303731
+Error: OTP timeout after 180 seconds for activation 4393303731
+    at getOTPFromActivation (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:433:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {"error":{},"rejection":true,"date":"Mon Nov 10 2025 17:29:05 GMT+0100 (West Africa Standard Time)","process":{"pid":7680,"uid":null,"gid":null,"cwd":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v22.13.1","argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js"],"memoryUsage":{"rss":109395968,"heapTotal":70520832,"heapUsed":34315320,"external":4573185,"arrayBuffers":171373}},"os":{"loadavg":[0,0,0],"uptime":15205.109},"trace":[{"column":9,"file":"C:\\Users\\NEW USER\\Desktop\\whatsapp-otp-bot\\testwhatsapp.js","function":"getOTPFromActivation","line":433,"method":null,"native":false},{"column":5,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":105,"method":"processTicksAndRejections","native":false}]}
+Error: OTP timeout after 180 seconds for activation 4393303731
+    at getOTPFromActivation (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\testwhatsapp.js:433:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
