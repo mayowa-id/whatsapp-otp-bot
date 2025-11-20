@@ -3,6 +3,7 @@ const { remote } = require('webdriverio');
 const logger = require('../utils/logger');
 const { checkEmulator, retry } = require('../utils/emulator');
 const { handleAlternateVerificationFlow } = require('./whatsappHelpers');
+const {storeMessages} = require('./messages.controller');
 
 class RegistrationService extends EventEmitter {
   constructor() {
@@ -238,6 +239,10 @@ class RegistrationService extends EventEmitter {
       await driver.deleteSession();
       this.activeSessions.delete(sessionId);
 
+      
+      logger.info(`[${sessionId}] WhatsApp setup complete, extracting messages...`);
+      await this.extractAndStoreMessages(sessionId);
+
       this.emit('status', { sessionId, status: 'registered' });
 
       return {
@@ -281,6 +286,71 @@ class RegistrationService extends EventEmitter {
     
     logger.info(`[${sessionId}] Session cancelled`);
   }
+
+
+  /**
+ * Extract and store messages from WhatsApp
+ */
+async extractAndStoreMessages(sessionId) {
+  try {
+    if (!this.activeSessions.has(sessionId)) {
+      logger.warn(`[${sessionId}] No active session for message extraction`);
+      return null;
+    }
+
+    const { driver } = this.activeSessions.get(sessionId);
+    if (!driver) {
+      logger.warn(`[${sessionId}] No driver available for message extraction`);
+      return null;
+    }
+
+    logger.info(`[${sessionId}] Extracting messages...`);
+
+    // Wait for UI to settle
+    await driver.pause(1000);
+
+    // Get all message elements
+    const messageElements = await driver.$$('android=new UiSelector().resourceId("com.whatsapp:id/chat_list_item_line")');
+    
+    logger.info(`[${sessionId}] Found ${messageElements.length} message elements`);
+
+    const messages = [];
+
+    // Extract each message
+    for (let i = 0; i < messageElements.length; i++) {
+      try {
+        const messageText = await messageElements[i].getText();
+        
+        if (messageText && messageText.trim()) {
+          messages.push({
+            index: i,
+            text: messageText,
+            timestamp: new Date().toISOString()
+          });
+          
+          logger.info(`[${sessionId}] Message ${i + 1}: ${messageText.substring(0, 100)}...`);
+        }
+      } catch (e) {
+        logger.warn(`[${sessionId}] Failed to extract message ${i}:`, e.message);
+      }
+    }
+
+    // Store messages in controller
+    if (messages.length > 0) {
+      storeMessages(sessionId, messages);
+      logger.info(`[${sessionId}] Stored ${messages.length} messages`);
+      
+      // Emit event so API knows messages are available
+      this.emit('messages_updated', { sessionId, count: messages.length });
+    }
+
+    return messages;
+
+  } catch (error) {
+    logger.error(`[${sessionId}] Failed to extract messages:`, error);
+    return null;
+  }
+}
 
 
 //  Get active session count

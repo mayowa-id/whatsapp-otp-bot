@@ -4,6 +4,16 @@ const { initializeSmsClient, getOTPFromActivation } = require('./src/services/sm
 const { handleAlternateVerificationFlow } = require('./src/services/whatsappHelpers');
 const { checkEmulator, retry } = require('./src/utils/emulator');
 
+// List of 30 random international names
+const RANDOM_NAMES = [
+  'Sofia', 'Marco', 'Yuki', 'Amara', 'Chen',
+  'Lara', 'Ahmed', 'Priya', 'Ivan', 'Olivia',
+  'Rajesh', 'Emma', 'Jamal', 'Sana', 'Klaus',
+  'Aisha', 'Diego', 'Nina', 'Ravi', 'Sophie',
+  'Kofi', 'Nora', 'Dmitri', 'Zara', 'Hassan',
+  'Lily', 'Carlos', 'Isha', 'Erik', 'Mira'
+];
+
 // Logger setup
 let logger;
 try {
@@ -52,6 +62,63 @@ let smsClient;
   }
 })();
 
+/**
+ * Extract messages from WhatsApp inbox
+ */
+async function extractMessages(driver) {
+  try {
+    logger.info('Starting message extraction...');
+    
+    // Wait for inbox to load
+    await driver.pause(2000);
+    
+    // Get all message threads/chats
+    const chatElements = await driver.$$('android=new UiSelector().resourceId("com.whatsapp:id/chat_list_item_line")');
+    
+    logger.info(`Found ${chatElements.length} chat items in inbox`);
+    
+    const messages = [];
+    
+    // Extract each message
+    for (let i = 0; i < chatElements.length; i++) {
+      try {
+        const chat = chatElements[i];
+        const text = await chat.getText();
+        
+        logger.info(`Message ${i + 1}: ${text}`);
+        
+        messages.push({
+          index: i,
+          text: text,
+          timestamp: new Date().toISOString()
+        });
+        
+        // Look for verification codes (6 digits)
+        const codeMatch = text.match(/\b(\d{6})\b/);
+        if (codeMatch) {
+          logger.info(`Found potential verification code: ${codeMatch[1]}`);
+        }
+      } catch (e) {
+        logger.warn(`Failed to extract message ${i}:`, e.message);
+      }
+    }
+    
+    logger.info(`Total messages extracted: ${messages.length}`);
+    return messages;
+    
+  } catch (error) {
+    logger.error('Failed to extract messages:', error.message);
+    return [];
+  }
+}
+
+/**
+ * Get random name from list
+ */
+function getRandomName() {
+  return RANDOM_NAMES[Math.floor(Math.random() * RANDOM_NAMES.length)];
+}
+
 async function registerWhatsApp() {
   let driver = null;
 
@@ -59,7 +126,7 @@ async function registerWhatsApp() {
     logger.info('Starting WhatsApp registration...');
 
     // 1. Check emulator
-    logger.info('Step 1/9: Checking emulator...');
+    logger.info('Step 1/13: Checking emulator...');
     const emulatorReady = await checkEmulator(logger);
     if (!emulatorReady) {
       throw new Error('Emulator not reachable. Make sure MuMu Player is running.');
@@ -67,7 +134,7 @@ async function registerWhatsApp() {
     logger.info('Emulator ready');
 
     // 2. Start Appium session
-    logger.info('Step 2/9: Starting Appium session...');
+    logger.info('Step 2/13: Starting Appium session...');
     driver = await remote({
       path: '/',
       port: 4723,
@@ -77,7 +144,7 @@ async function registerWhatsApp() {
     logger.info('Appium session started');
 
     // 3. Agree to terms
-    logger.info('Step 3/9: Agreeing to terms (if any)...');
+    logger.info('Step 3/13: Agreeing to terms (if any)...');
     await retry('Agree', async () => {
       const btn = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/eula_accept")');
       await btn.waitForDisplayed({ timeout: 15000 });
@@ -87,7 +154,7 @@ async function registerWhatsApp() {
     logger.info('Agree step done');
 
     // 4. Enter country code
-    logger.info('Step 4/9: Entering country code...');
+    logger.info('Step 4/13: Entering country code...');
     await retry('Country', async () => {
       const el = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_cc")');
       await el.waitForDisplayed({ timeout: 10000 });
@@ -104,7 +171,7 @@ async function registerWhatsApp() {
     const localNumber = process.env.SMS_ACTIVATE_NUMBER;
     if (!localNumber) throw new Error('SMS_ACTIVATE_NUMBER missing in .env');
     
-    logger.info('Step 5/9: Entering phone number...');
+    logger.info('Step 5/13: Entering phone number...');
     await retry('Phone', async () => {
       const el = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_phone")');
       await el.waitForDisplayed({ timeout: 5000 });
@@ -116,7 +183,7 @@ async function registerWhatsApp() {
     logger.info('Phone number entered');
 
     // 6. Click Next
-    logger.info('Step 6/9: Clicking Next...');
+    logger.info('Step 6/13: Clicking Next...');
     await retry('Next', async () => {
       const btn = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_submit")');
       await btn.click();
@@ -125,7 +192,7 @@ async function registerWhatsApp() {
     logger.info('Next clicked');
 
     // 7. Confirm phone number
-    logger.info('Step 7/9: Confirming phone number...');
+    logger.info('Step 7/13: Confirming phone number...');
     await retry('Confirm', async () => {
       const selectors = [
         'android=new UiSelector().text("Yes")',
@@ -153,11 +220,11 @@ async function registerWhatsApp() {
     await handleAlternateVerificationFlow(driver, { log: logger });
 
     // 8. Start SMS-Activate polling (concurrent)
-    logger.info('Step 8/9: Starting SMS-Activate polling for OTP (concurrent)...');
+    logger.info('Step 8/13: Starting SMS-Activate polling for OTP (concurrent)...');
     const otpPromise = getOTPFromActivation(smsClient, logger);
 
     // 9. Wait for OTP input UI
-    logger.info('Step 9/9: Waiting for OTP input to appear in WhatsApp UI...');
+    logger.info('Step 9/13: Waiting for OTP input to appear in WhatsApp UI...');
     await retry('OTP screen', async () => {
       const el = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/verify_sms_code_input")');
       await el.waitForDisplayed({ timeout: 60000 });
@@ -176,7 +243,7 @@ async function registerWhatsApp() {
     }
 
     // 11. Enter OTP
-    logger.info('Entering OTP into WhatsApp UI...');
+    logger.info('Step 10/13: Entering OTP into WhatsApp UI...');
     await retry('Enter OTP', async () => {
       const el = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/verify_sms_code_input")');
       await el.setValue(otpResult.otp);
@@ -184,40 +251,125 @@ async function registerWhatsApp() {
     });
     logger.info('OTP entered');
 
-    // 12. Profile setup
+    // 12. Skip profile picture and setup name/email
+    logger.info('Step 11/13: Handling profile setup screens...');
+    
+    // Skip profile picture if shown
     try {
-      const name = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_name")');
-      if (await name.isDisplayed()) {
-        await name.setValue('Bot');
-        const done = await driver.$('android=new UiSelector().text("Done")');
-        await done.click();
-        await driver.pause(2000);
-        logger.info('Profile setup completed');
+      logger.info('Looking for profile picture skip...');
+      const skipPicBtn = await driver.$('android=new UiSelector().textContains("Skip")');
+      if (await skipPicBtn.isDisplayed()) {
+        await skipPicBtn.click();
+        await driver.pause(1000);
+        logger.info('Profile picture skipped');
       }
     } catch (e) {
-      logger.info('No profile setup needed');
+      logger.info('No profile picture screen or already passed');
     }
 
-    // Skip backup
+    // Enter random name
     try {
-      const skip = await driver.$('android=new UiSelector().textContains("Skip")');
-      await skip.waitForDisplayed({ timeout: 10000 });
-      await skip.click();
-      logger.info('Backup skipped');
+      logger.info('Looking for name input field...');
+      const nameField = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_name")');
+      if (await nameField.isDisplayed()) {
+        const randomName = getRandomName();
+        await nameField.click();
+        await driver.pause(300);
+        await nameField.clearValue();
+        await driver.pause(200);
+        await nameField.setValue(randomName);
+        await driver.pause(500);
+        logger.info(`Entered random name: ${randomName}`);
+        
+        // Click Done/Continue button
+        try {
+          const doneBtn = await driver.$('android=new UiSelector().text("Done")');
+          if (await doneBtn.isDisplayed()) {
+            await doneBtn.click();
+            await driver.pause(2000);
+            logger.info('Name submitted');
+          }
+        } catch (e) {
+          logger.info('No Done button found');
+        }
+      }
     } catch (e) {
-      logger.info('No backup prompt');
+      logger.info('No name input field found');
     }
 
-    // Verify registration complete
+    // Skip email/backup
+    logger.info('Step 12/13: Skipping backup and email prompts...');
+    try {
+      const skipBtn = await driver.$('android=new UiSelector().textContains("Skip")');
+      if (await skipBtn.isDisplayed()) {
+        await skipBtn.click();
+        await driver.pause(2000);
+        logger.info('Backup/Email skipped');
+      }
+    } catch (e) {
+      logger.info('No skip button for backup');
+    }
+
+    // 13. Verify registration complete
+    logger.info('Step 13/13: Verifying registration complete...');
     try {
       await driver.$('~New chat').waitForDisplayed({ timeout: 20000 });
       logger.info('SUCCESS: WhatsApp fully registered!');
     } catch (e) {
-      logger.info('Registration may be complete (New chat not found)');
+      logger.info('Chat screen may not be visible yet - registration likely complete');
     }
 
-    await driver.deleteSession();
-    process.exit(0);
+    // Keep session active and extract messages
+    logger.info('Keeping WhatsApp session active for message monitoring...');
+    logger.info('SESSION READY FOR MESSAGE EXTRACTION');
+    
+    // Extract any existing messages
+    const existingMessages = await extractMessages(driver);
+    logger.info(`Extracted ${existingMessages.length} existing messages`);
+    
+    // Log session info
+    logger.info('==================================================');
+    logger.info('WhatsApp Registration Complete - Ready for Messages');
+    logger.info('==================================================');
+    logger.info(`Phone Number: ${otpResult.phoneNumber}`);
+    logger.info(`Session ID: ${Date.now()}`);
+    logger.info(`Current Inbox Messages: ${existingMessages.length}`);
+    logger.info('Waiting for incoming messages...');
+    logger.info('==================================================');
+    
+    // Keep monitoring for messages (every 30 seconds)
+    let messageCheckInterval = setInterval(async () => {
+      try {
+        const messages = await extractMessages(driver);
+        if (messages.length > 0) {
+          logger.info(`[MESSAGE CHECK] Found ${messages.length} messages`);
+          messages.forEach((msg, idx) => {
+            logger.info(`  [${idx + 1}] ${msg.text}`);
+          });
+        }
+      } catch (err) {
+        logger.warn('Error during message check:', err.message);
+      }
+    }, 30000);
+    
+    // Keep alive signal
+    let keepAliveInterval = setInterval(() => {
+      logger.info('Session alive - monitoring for messages...');
+    }, 60000);
+
+    // Handle exit gracefully
+    process.on('SIGINT', async () => {
+      logger.info('Shutting down...');
+      clearInterval(messageCheckInterval);
+      clearInterval(keepAliveInterval);
+      if (driver) {
+        try { 
+          await driver.deleteSession(); 
+          logger.info('Appium session closed');
+        } catch (e) {}
+      }
+      process.exit(0);
+    });
 
   } catch (err) {
     logger.error('FAILED:', err && err.message ? err.message : err);
@@ -233,9 +385,9 @@ async function registerWhatsApp() {
 console.log('Environment check:');
 console.log('- EMULATOR_DEVICE:', process.env.EMULATOR_DEVICE || '127.0.0.1:7555');
 console.log('- ADB_PATH:', process.env.ADB_PATH ? 'Set' : 'Not set (using default)');
-console.log('- SMS_ACTIVATE_API_KEY:', process.env.SMS_ACTIVATE_API_KEY ? 'Set' : 'NOT SET ❌');
-console.log('- SMS_ACTIVATE_ACTIVATION_ID:', process.env.SMS_ACTIVATE_ACTIVATION_ID ? 'Set' : 'NOT SET ❌');
-console.log('- SMS_ACTIVATE_NUMBER:', process.env.SMS_ACTIVATE_NUMBER ? 'Set' : 'NOT SET ❌');
+console.log('- SMS_ACTIVATE_API_KEY:', process.env.SMS_ACTIVATE_API_KEY ? 'Set' : 'NOT SET');
+console.log('- SMS_ACTIVATE_ACTIVATION_ID:', process.env.SMS_ACTIVATE_ACTIVATION_ID ? 'Set' : 'NOT SET');
+console.log('- SMS_ACTIVATE_NUMBER:', process.env.SMS_ACTIVATE_NUMBER ? 'Set' : 'NOT SET');
 console.log('- SMS_ACTIVATE_COUNTRY_CODE:', process.env.SMS_ACTIVATE_COUNTRY_CODE || '62 (default)');
 console.log('');
 
