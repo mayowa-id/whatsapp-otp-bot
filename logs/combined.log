@@ -28701,3 +28701,247 @@ emulator-5554	device
 2025-11-20 03:31:36 [INFO]: Selecting verification method: "Receive SMS" (selector: android=new UiSelector().textContains("Receive SMS"))
 2025-11-20 03:31:37 [INFO]: Clicking final continue/confirm button via android=new UiSelector().textContains("Continue")
 2025-11-20 03:31:39 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:45:39 [INFO]: Redis: Connecting...
+2025-11-20 03:45:39 [INFO]: Redis: Connected and ready
+2025-11-20 03:45:39 [INFO]: Middlewares initialized
+2025-11-20 03:45:39 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 03:45:39 [INFO]: Routes initialized
+2025-11-20 03:45:39 [INFO]: Server running on port 3000
+2025-11-20 03:45:39 [INFO]: Environment: development
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [WARN]: Redis reconnecting... Attempt 1
+2025-11-20 11:38:33 [WARN]: Redis: Connection closed
+2025-11-20 11:38:33 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [WARN]: Redis reconnecting... Attempt 2
+2025-11-20 11:38:33 [WARN]: Redis: Connection closed
+2025-11-20 11:38:33 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [WARN]: Redis reconnecting... Attempt 3
+2025-11-20 11:38:33 [WARN]: Redis: Connection closed
+2025-11-20 11:38:33 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [WARN]: Redis reconnecting... Attempt 4
+2025-11-20 11:38:33 [WARN]: Redis: Connection closed
+2025-11-20 11:38:33 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [WARN]: Redis reconnecting... Attempt 5
+2025-11-20 11:38:33 [WARN]: Redis: Connection closed
+2025-11-20 11:38:33 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [WARN]: Redis reconnecting... Attempt 6
+2025-11-20 11:38:34 [WARN]: Redis: Connection closed
+2025-11-20 11:38:34 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [WARN]: Redis reconnecting... Attempt 7
+2025-11-20 11:38:34 [WARN]: Redis: Connection closed
+2025-11-20 11:38:34 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [WARN]: Redis reconnecting... Attempt 8
+2025-11-20 11:38:34 [WARN]: Redis: Connection closed
+2025-11-20 11:38:34 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:35 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:35 [WARN]: Redis reconnecting... Attempt 9
+2025-11-20 11:38:35 [WARN]: Redis: Connection closed
+2025-11-20 11:38:35 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:35 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:35 [WARN]: Redis reconnecting... Attempt 10
+2025-11-20 11:38:35 [WARN]: Redis: Connection closed
+2025-11-20 11:38:35 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:36 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:36 [WARN]: Redis reconnecting... Attempt 11
+2025-11-20 11:38:36 [WARN]: Redis: Connection closed
+2025-11-20 11:38:36 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:36 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:36 [WARN]: Redis reconnecting... Attempt 12
+2025-11-20 11:38:36 [WARN]: Redis: Connection closed
+2025-11-20 11:38:36 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:37 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:37 [WARN]: Redis reconnecting... Attempt 13
+2025-11-20 11:38:37 [WARN]: Redis: Connection closed
+2025-11-20 11:38:37 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:38 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:38 [WARN]: Redis reconnecting... Attempt 14
+2025-11-20 11:38:38 [WARN]: Redis: Connection closed
+2025-11-20 11:38:38 [INFO]: Redis: Reconnecting...
+2025-11-20 11:38:38 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:38 [WARN]: Redis reconnecting... Attempt 15
+2025-11-20 11:38:38 [WARN]: Redis: Connection closed
+2025-11-20 11:38:38 [INFO]: Redis: Reconnecting...
+2025-11-20 11:43:28 [INFO]: Redis: Connecting...
+2025-11-20 11:43:28 [INFO]: Redis: Connected and ready
+2025-11-20 11:43:29 [INFO]: Middlewares initialized
+2025-11-20 11:43:29 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 11:43:29 [INFO]: Routes initialized
+2025-11-20 11:43:29 [INFO]: Server running on port 3000
+2025-11-20 11:43:29 [INFO]: Environment: development
+2025-11-20 12:51:00 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 12:51:00 [INFO]: New registration session created: whatsapp_1763639460502_8eeb21eb for +2347089426215
+2025-11-20 12:51:00 [INFO]: [whatsapp_1763639460502_8eeb21eb] Starting registration for +2347089426215
+2025-11-20 12:51:00 [WARN]: Failed to update Redis for whatsapp_1763639460502_8eeb21eb:
+2025-11-20 12:51:00 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 12:51:02 [INFO]: ADB devices output: List of devices attached
+emulator-5554	offline
+2025-11-20 12:51:02 [INFO]: Connecting ADB to 127.0.0.1:7555...
+2025-11-20 12:51:08 [INFO]: [whatsapp_1763639460502_8eeb21eb] Emulator ready
+2025-11-20 12:51:08 [WARN]: Failed to update Redis for whatsapp_1763639460502_8eeb21eb:
+2025-11-20 12:52:54 [INFO]: Redis: Connecting...
+2025-11-20 12:52:54 [INFO]: Redis: Connected and ready
+2025-11-20 12:52:54 [INFO]: Middlewares initialized
+2025-11-20 12:52:54 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 12:52:54 [INFO]: Routes initialized
+2025-11-20 12:52:55 [INFO]: Server running on port 3000
+2025-11-20 12:52:55 [INFO]: Environment: development
+2025-11-20 12:55:16 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 12:55:16 [INFO]: New registration session created: whatsapp_1763639716144_c6d42fc1 for +16727674536
+2025-11-20 12:55:16 [INFO]: [whatsapp_1763639716144_c6d42fc1] Starting registration for +16727674536
+2025-11-20 12:55:16 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:16 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 12:55:16 [INFO]: ADB devices output: List of devices attached
+127.0.0.1:7555	device
+emulator-5554	device
+2025-11-20 12:55:16 [INFO]: Emulator already connected
+2025-11-20 12:55:16 [INFO]: [whatsapp_1763639716144_c6d42fc1] Emulator ready
+2025-11-20 12:55:16 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:46 [INFO]: [whatsapp_1763639716144_c6d42fc1] Appium session started
+2025-11-20 12:55:46 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:51 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:55 [INFO]: [whatsapp_1763639716144_c6d42fc1] Country code entered: 167
+2025-11-20 12:55:55 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:57 [INFO]: [whatsapp_1763639716144_c6d42fc1] Phone number entered: 27674536
+2025-11-20 12:55:57 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:55:59 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:56:04 [ERROR]: [whatsapp_1763639716144_c6d42fc1] Registration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 12:56:05 [WARN]: Failed to update Redis for whatsapp_1763639716144_c6d42fc1:
+2025-11-20 12:56:05 [ERROR]: [whatsapp_1763639716144_c6d42fc1] registrationService.startRegistration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 12:59:01 [INFO]: Redis: Connecting...
+2025-11-20 12:59:01 [INFO]: Redis: Connected and ready
+2025-11-20 12:59:01 [INFO]: Middlewares initialized
+2025-11-20 12:59:01 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 12:59:01 [INFO]: Routes initialized
+2025-11-20 12:59:01 [INFO]: Server running on port 3000
+2025-11-20 12:59:01 [INFO]: Environment: development
+2025-11-20 13:00:35 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 13:00:35 [INFO]: New registration session created: whatsapp_1763640035055_eb30571e for +15482516295
+2025-11-20 13:00:35 [INFO]: [whatsapp_1763640035055_eb30571e] Starting registration for +15482516295
+2025-11-20 13:00:35 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:00:35 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 13:00:35 [INFO]: ADB devices output: List of devices attached
+127.0.0.1:7555	device
+emulator-5554	device
+2025-11-20 13:00:35 [INFO]: Emulator already connected
+2025-11-20 13:00:35 [INFO]: [whatsapp_1763640035055_eb30571e] Emulator ready
+2025-11-20 13:00:35 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:00:49 [INFO]: [whatsapp_1763640035055_eb30571e] Appium session started
+2025-11-20 13:00:49 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:00:53 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:00:56 [INFO]: [whatsapp_1763640035055_eb30571e] Country code entered: 154
+2025-11-20 13:00:56 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:00:59 [INFO]: [whatsapp_1763640035055_eb30571e] Phone number entered: 82516295
+2025-11-20 13:00:59 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:01:01 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:01:06 [ERROR]: [whatsapp_1763640035055_eb30571e] Registration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 13:01:07 [WARN]: Failed to update Redis for whatsapp_1763640035055_eb30571e:
+2025-11-20 13:01:07 [ERROR]: [whatsapp_1763640035055_eb30571e] registrationService.startRegistration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 13:18:08 [INFO]: Phone parsing: libphonenumber-js loaded
+2025-11-20 13:18:08 [INFO]: Redis: Connecting...
+2025-11-20 13:18:08 [INFO]: Redis: Connected and ready
+2025-11-20 13:18:08 [INFO]: Middlewares initialized
+2025-11-20 13:18:08 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 13:18:08 [INFO]: Routes initialized
+2025-11-20 13:18:08 [INFO]: Server running on port 3000
+2025-11-20 13:18:08 [INFO]: Environment: development
+2025-11-20 13:19:51 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 13:19:51 [INFO]: New registration session created: whatsapp_1763641191724_c7a0953d for +12496184460 (countryCode=1)
+2025-11-20 13:19:51 [INFO]: [whatsapp_1763641191724_c7a0953d] Starting registration for +12496184460
+2025-11-20 13:19:51 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:19:51 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 13:19:51 [INFO]: ADB devices output: List of devices attached
+127.0.0.1:7555	device
+emulator-5554	device
+2025-11-20 13:19:51 [INFO]: Emulator already connected
+2025-11-20 13:19:51 [INFO]: [whatsapp_1763641191724_c7a0953d] Emulator ready
+2025-11-20 13:19:51 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:25 [INFO]: [whatsapp_1763641191724_c7a0953d] Appium session started
+2025-11-20 13:20:25 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:29 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:32 [INFO]: [whatsapp_1763641191724_c7a0953d] Country code entered: 1
+2025-11-20 13:20:32 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:35 [INFO]: [whatsapp_1763641191724_c7a0953d] Phone number entered: 2496184460
+2025-11-20 13:20:35 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:37 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:41 [INFO]: [whatsapp_1763641191724_c7a0953d] Confirmed via selector: android=new UiSelector().text("Yes")
+2025-11-20 13:20:41 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:44 [INFO]: SMS option not found (attempt 1/4) — waiting and retrying
+2025-11-20 13:20:45 [INFO]: Selecting verification method: "Waiting to automatically detect 6-digit code sent by SMS to +1 (249) 618-4460. Wrong number?" (selector: android=new UiSelector().textContains("SMS"))
+2025-11-20 13:20:47 [INFO]: Final continue button not found; attempting to press center of screen as fallback
+2025-11-20 13:20:47 [WARN]: Fallback tapping failed
+2025-11-20 13:20:47 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:47 [INFO]: [whatsapp_1763641191724_c7a0953d] OTP input screen detected - READY FOR OTP
+2025-11-20 13:20:47 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:20:47 [INFO]: [whatsapp_1763641191724_c7a0953d] registrationService.startRegistration finished
+2025-11-20 13:20:58 [WARN]: Redis update failed:
+2025-11-20 13:20:58 [INFO]: OTP received for session whatsapp_1763641191724_c7a0953d: 831936
+2025-11-20 13:20:58 [INFO]: [whatsapp_1763641191724_c7a0953d] Starting OTP verification
+2025-11-20 13:20:58 [INFO]: [whatsapp_1763641191724_c7a0953d] Submitting OTP: 831936
+2025-11-20 13:20:58 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:03 [INFO]: [whatsapp_1763641191724_c7a0953d] OTP entered, waiting for verification...
+2025-11-20 13:21:03 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:08 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:08 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:18 [INFO]: [whatsapp_1763641191724_c7a0953d] No backup prompt
+2025-11-20 13:21:18 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:38 [INFO]: [whatsapp_1763641191724_c7a0953d] Registration may be complete (New chat not found)
+2025-11-20 13:21:39 [WARN]: Failed to update Redis for whatsapp_1763641191724_c7a0953d:
+2025-11-20 13:21:39 [WARN]: Redis update failed:
+2025-11-20 13:21:39 [INFO]: [whatsapp_1763641191724_c7a0953d] OTP verification complete: SUCCESS

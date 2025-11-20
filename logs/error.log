@@ -13795,3 +13795,72 @@ TypeError: redis.setex is not a function
     at RegistrationService.emit (node:domain:489:12)
     at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:146:12)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:34 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:35 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:35 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:36 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:36 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:37 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:38 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 11:38:38 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
+Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 12:56:04 [ERROR]: [whatsapp_1763639716144_c6d42fc1] Registration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 12:56:05 [ERROR]: [whatsapp_1763639716144_c6d42fc1] registrationService.startRegistration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 13:01:06 [ERROR]: [whatsapp_1763640035055_eb30571e] Registration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
+2025-11-20 13:01:07 [ERROR]: [whatsapp_1763640035055_eb30571e] registrationService.startRegistration failed: Could not find confirmation button
+Error: Could not find confirmation button
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:129:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async retry (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\utils\emulator.js:39:7)
+    at async RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:110:7)
