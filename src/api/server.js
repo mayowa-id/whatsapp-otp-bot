@@ -57,8 +57,10 @@ class Server {
     // Health check route
     this.app.use('/health', healthRoutes);
 
-    // API routes
-    this.app.use('/api/v1/otp', otpRoutes);
+    // --- Mount WhatsApp (OTP) routes at /whatsapp to match documentation ---
+    // Routes provided by routes/otp.routes.js (e.g., POST /whatsapp/register)
+    this.app.use('/whatsapp', otpRoutes);
+    logger.info('Mounted OTP routes at /whatsapp');
 
     // Root endpoint
     this.app.get('/', (req, res) => {
@@ -70,7 +72,7 @@ class Server {
       });
     });
 
-    // 404 handler
+    // 404 handler (must come after route mounts)
     this.app.use((req, res) => {
       res.status(404).json({
         success: false,

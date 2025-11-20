@@ -1,10 +1,75 @@
+// src/controllers/otp.controller.js
+const fs = require('fs');
+const path = require('path');
+const { spawn } = require('child_process');
+const { v4: uuidv4 } = require('uuid');
+
 const logger = require('../../utils/logger');
 const registrationService = require('../../services/RegistrationService');
 const redis = require('../../database/redis');
-const { v4: uuidv4 } = require('uuid');
 
 // In-memory storage for sessions (backed by Redis)
 const sessions = new Map();
+
+/**
+ * Spawn helper to run testwhatsapp.js as a separate Node process.
+ * - sessionId: used for logging context
+ * - phoneNumber, countryCode: injected into child env
+ */
+function spawnTestWhatsapp(sessionId, phoneNumber, countryCode) {
+  // Resolve script path from project root (process.cwd())
+  const scriptPath = path.join(process.cwd(), 'testwhatsapp.js');
+
+  if (!fs.existsSync(scriptPath)) {
+    logger.error(`[${sessionId}] Registration child script not found at ${scriptPath}`);
+    return null;
+  }
+
+  const env = Object.assign({}, process.env, {
+    SMS_ACTIVATE_NUMBER: phoneNumber,
+    SMS_ACTIVATE_COUNTRY_CODE: countryCode
+  });
+
+  logger.info(
+    `[${sessionId}] Spawning registration child: ${process.execPath} ${scriptPath} (phone=${phoneNumber})`
+  );
+
+  // Use pipes so we can capture stdout/stderr for logs
+  const child = spawn(process.execPath, [scriptPath], {
+    env,
+    cwd: process.cwd(),
+    stdio: ['ignore', 'pipe', 'pipe'],
+    detached: true
+  });
+
+  child.stdout.on('data', chunk => {
+    const txt = chunk.toString().trim();
+    if (txt) logger.info(`[child ${sessionId}] ${txt}`);
+  });
+
+  child.stderr.on('data', chunk => {
+    const txt = chunk.toString().trim();
+    if (txt) logger.error(`[child ${sessionId}] ${txt}`);
+  });
+
+  child.on('error', err => {
+    logger.error(`[child ${sessionId}] spawn error:`, err);
+  });
+
+  child.on('exit', (code, signal) => {
+    logger.info(`[child ${sessionId}] exited with code=${code} signal=${signal}`);
+  });
+
+  // Let parent exit independently but keep child running
+  try {
+    child.unref();
+  } catch (e) {
+    // some environments may throw; not fatal
+    logger.warn(`[child ${sessionId}] unref() failed: ${e.message}`);
+  }
+
+  return child.pid;
+}
 
 // Listen to registration service events
 registrationService.on('status', async ({ sessionId, status, error }) => {
@@ -13,14 +78,14 @@ registrationService.on('status', async ({ sessionId, status, error }) => {
     session.status = status;
     session.lastUpdated = new Date().toISOString();
     if (error) session.error = error;
-    
+
     sessions.set(sessionId, session);
-    
-    // Update Redis
+
+    // Update Redis with FIXED syntax (setEx instead of setex)
     try {
-      await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+      await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
     } catch (err) {
-      logger.error(`Failed to update Redis for ${sessionId}:`, err);
+      logger.warn(`Failed to update Redis for ${sessionId}:`, err.message);
     }
   }
 });
@@ -33,7 +98,7 @@ exports.registerAccount = async (req, res) => {
   try {
     const { phoneNumber, countryCode } = req.body;
 
-    // Validate phone number
+    // Validate phone number (E.164-ish)
     if (!phoneNumber || !phoneNumber.match(/^\+?[1-9]\d{1,14}$/)) {
       return res.status(400).json({
         success: false,
@@ -54,7 +119,7 @@ exports.registerAccount = async (req, res) => {
     const sessionId = `whatsapp_${Date.now()}_${uuidv4().split('-')[0]}`;
 
     // Extract country code if not provided
-    const finalCountryCode = countryCode || phoneNumber.replace(/^\+/, '').match(/^\d{1,3}/)[0];
+    const finalCountryCode = countryCode || (phoneNumber.replace(/^\+/, '').match(/^\d{1,3}/) || [''])[0];
 
     // Create session object
     const session = {
@@ -69,9 +134,10 @@ exports.registerAccount = async (req, res) => {
 
     // Store session
     sessions.set(sessionId, session);
-    
+
+    // Store in Redis with FIXED syntax (setEx instead of setex)
     try {
-      await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+      await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
     } catch (err) {
       logger.warn('Redis storage failed, continuing with in-memory only:', err.message);
     }
@@ -90,9 +156,38 @@ exports.registerAccount = async (req, res) => {
       nextStep: 'Check status endpoint, then submit OTP when you receive the SMS'
     });
 
-    // Start registration process in background
-    startRegistrationInBackground(sessionId, phoneNumber, finalCountryCode);
-
+    // Start background process to perform the registration
+    // If you have registrationService.startRegistration implementation that orchestrates the flow,
+    // call it. Otherwise, spawn the testwhatsapp script as a child process.
+    try {
+      // Prefer internal service orchestration if available
+      if (typeof registrationService.startRegistration === 'function') {
+        // Start the registration in the background (non-blocking)
+        registrationService.startRegistration(sessionId, phoneNumber, finalCountryCode)
+          .then(() => logger.info(`[${sessionId}] registrationService.startRegistration finished`))
+          .catch(err => logger.error(`[${sessionId}] registrationService.startRegistration failed:`, err));
+      } else {
+        // Fallback: spawn testwhatsapp.js directly
+        const pid = spawnTestWhatsapp(sessionId, phoneNumber, finalCountryCode);
+        if (pid) logger.info(`Launched testwhatsapp.js for session ${sessionId} as PID ${pid}`);
+        else logger.error(`[${sessionId}] Failed to launch testwhatsapp.js`);
+      }
+    } catch (err) {
+      logger.error(`[${sessionId}] Failed to kick off background registration:`, err);
+      // Update session status to failed
+      const s = sessions.get(sessionId);
+      if (s) {
+        s.status = 'failed';
+        s.error = err.message;
+        s.lastUpdated = new Date().toISOString();
+        sessions.set(sessionId, s);
+        try { 
+          await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(s)); 
+        } catch (e) { 
+          logger.warn('Failed to update error status in Redis:', e.message);
+        }
+      }
+    }
   } catch (error) {
     logger.error('Registration initiation failed:', error);
     res.status(500).json({
@@ -129,7 +224,7 @@ exports.verifyOTP = async (req, res) => {
     // Get session
     let session = sessions.get(sessionId);
     if (!session) {
-      // Try Redis
+      // Try Redis with FIXED syntax
       try {
         const cached = await redis.get(`session:${sessionId}`);
         if (cached) {
@@ -166,11 +261,11 @@ exports.verifyOTP = async (req, res) => {
         error: `Cannot verify OTP. Current status: ${session.status}`,
         sessionId,
         currentStatus: session.status,
-        hint: session.status === 'pending' || session.status === 'in_progress' 
+        hint: session.status === 'pending' || session.status === 'in_progress'
           ? 'Wait for status to be "waiting_for_otp" before submitting OTP'
           : session.status === 'registered'
-          ? 'This account is already registered'
-          : 'Please start a new registration'
+            ? 'This account is already registered'
+            : 'Please start a new registration'
       });
     }
 
@@ -191,8 +286,9 @@ exports.verifyOTP = async (req, res) => {
     session.lastUpdated = new Date().toISOString();
 
     sessions.set(sessionId, session);
+    // Update Redis with FIXED syntax (setEx instead of setex)
     try {
-      await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+      await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
     } catch (err) {
       logger.warn('Redis update failed:', err.message);
     }
@@ -233,6 +329,7 @@ exports.getStatus = async (req, res) => {
     // Get session
     let session = sessions.get(sessionId);
     if (!session) {
+      // Try Redis with FIXED syntax
       try {
         const cached = await redis.get(`session:${sessionId}`);
         if (cached) {
@@ -314,9 +411,10 @@ exports.cancelRegistration = async (req, res) => {
     session.status = 'cancelled';
     session.lastUpdated = new Date().toISOString();
     sessions.set(sessionId, session);
-    
+
+    // Update Redis with FIXED syntax (setEx instead of setex)
     try {
-      await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+      await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
     } catch (err) {
       logger.warn('Redis update failed:', err.message);
     }
@@ -373,45 +471,14 @@ exports.listSessions = async (req, res) => {
 // ===== BACKGROUND WORKERS =====
 
 /**
- * Start registration process in background
- */
-async function startRegistrationInBackground(sessionId, phoneNumber, countryCode) {
-  try {
-    logger.info(`[${sessionId}] Starting background registration`);
-    
-    await registrationService.startRegistration(sessionId, phoneNumber, countryCode);
-    
-    logger.info(`[${sessionId}] Registration ready for OTP`);
-
-  } catch (error) {
-    logger.error(`[${sessionId}] Background registration failed:`, error);
-    
-    // Update session with error
-    const session = sessions.get(sessionId);
-    if (session) {
-      session.status = 'failed';
-      session.error = error.message;
-      session.lastUpdated = new Date().toISOString();
-      sessions.set(sessionId, session);
-      
-      try {
-        await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
-      } catch (err) {
-        logger.warn('Redis update failed:', err.message);
-      }
-    }
-  }
-}
-
-/**
  * Verify OTP in background
  */
 async function verifyOTPInBackground(sessionId, otp) {
   try {
     logger.info(`[${sessionId}] Starting OTP verification`);
-    
+
     const result = await registrationService.submitOTP(sessionId, otp);
-    
+
     // Update session
     const session = sessions.get(sessionId);
     if (session) {
@@ -419,9 +486,10 @@ async function verifyOTPInBackground(sessionId, otp) {
       session.completedAt = new Date().toISOString();
       session.lastUpdated = new Date().toISOString();
       sessions.set(sessionId, session);
-      
+
+      // Update Redis with FIXED syntax (setEx instead of setex)
       try {
-        await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+        await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
       } catch (err) {
         logger.warn('Redis update failed:', err.message);
       }
@@ -431,7 +499,7 @@ async function verifyOTPInBackground(sessionId, otp) {
 
   } catch (error) {
     logger.error(`[${sessionId}] OTP verification failed:`, error);
-    
+
     // Update session with error
     const session = sessions.get(sessionId);
     if (session) {
@@ -439,9 +507,10 @@ async function verifyOTPInBackground(sessionId, otp) {
       session.error = `OTP verification failed: ${error.message}`;
       session.lastUpdated = new Date().toISOString();
       sessions.set(sessionId, session);
-      
+
+      // Update Redis with FIXED syntax (setEx instead of setex)
       try {
-        await redis.setex(`session:${sessionId}`, 900, JSON.stringify(session));
+        await redis.setEx(`session:${sessionId}`, 900, JSON.stringify(session));
       } catch (err) {
         logger.warn('Redis update failed:', err.message);
       }

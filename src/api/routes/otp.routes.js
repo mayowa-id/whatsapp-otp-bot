@@ -12,7 +12,7 @@ if (missingMethods.length > 0) {
   throw new Error(`Controller is missing required methods: ${missingMethods.join(', ')}`);
 }
 
-// Routes
+// Routes (mounted at /whatsapp in server.js)
 router.post('/register', otpController.registerAccount);
 router.post('/verify', otpController.verifyOTP);
 router.get('/status/:sessionId', otpController.getStatus);

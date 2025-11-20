@@ -28462,3 +28462,242 @@ Error: connect ECONNREFUSED 127.0.0.1:6379
 2025-11-18 21:31:03 [INFO]: Routes initialized
 2025-11-18 21:31:03 [INFO]: Server running on port 3000
 2025-11-18 21:31:03 [INFO]: Environment: development
+2025-11-19 10:25:13 [INFO]: Redis: Connecting...
+2025-11-19 10:25:13 [INFO]: Redis: Connected and ready
+2025-11-19 10:25:13 [INFO]: Middlewares initialized
+2025-11-19 10:25:13 [INFO]: Routes initialized
+2025-11-19 10:25:13 [INFO]: Server running on port 3000
+2025-11-19 10:25:13 [INFO]: Environment: development
+2025-11-19 11:03:11 [INFO]: Redis: Connecting...
+2025-11-19 11:03:11 [INFO]: Redis: Connected and ready
+2025-11-19 11:03:11 [INFO]: Middlewares initialized
+2025-11-19 11:03:11 [INFO]: Routes initialized
+2025-11-19 11:03:11 [INFO]: Server running on port 3000
+2025-11-19 11:03:11 [INFO]: Environment: development
+2025-11-19 11:04:40 [INFO]: Redis: Connecting...
+2025-11-19 11:04:40 [INFO]: Redis: Connected and ready
+2025-11-19 11:04:40 [INFO]: Middlewares initialized
+2025-11-19 11:04:40 [INFO]: Routes initialized
+2025-11-19 11:04:40 [INFO]: Server running on port 3000
+2025-11-19 11:04:40 [INFO]: Environment: development
+2025-11-19 11:17:32 [INFO]: Redis: Connecting...
+2025-11-19 11:17:32 [INFO]: Redis: Connected and ready
+2025-11-19 11:17:32 [INFO]: Middlewares initialized
+2025-11-19 11:17:32 [INFO]: Routes initialized
+2025-11-19 11:17:32 [INFO]: Server running on port 3000
+2025-11-19 11:17:32 [INFO]: Environment: development
+2025-11-19 12:05:43 [INFO]: Redis: Connecting...
+2025-11-19 12:05:43 [INFO]: Redis: Connected and ready
+2025-11-19 12:05:43 [INFO]: Middlewares initialized
+2025-11-19 12:05:43 [INFO]: Routes initialized
+2025-11-19 12:05:43 [INFO]: Server running on port 3000
+2025-11-19 12:05:43 [INFO]: Environment: development
+2025-11-19 12:06:11 [INFO]: Redis: Connecting...
+2025-11-19 12:06:11 [INFO]: Redis: Connected and ready
+2025-11-19 12:06:11 [INFO]: Middlewares initialized
+2025-11-19 12:06:11 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-19 12:06:11 [INFO]: Routes initialized
+2025-11-19 12:06:11 [INFO]: Server running on port 3000
+2025-11-19 12:06:11 [INFO]: Environment: development
+2025-11-20 01:51:26 [INFO]: Redis: Connecting...
+2025-11-20 01:51:26 [INFO]: Redis: Connected and ready
+2025-11-20 01:51:26 [INFO]: Middlewares initialized
+2025-11-20 01:51:26 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 01:51:26 [INFO]: Routes initialized
+2025-11-20 01:51:26 [INFO]: Server running on port 3000
+2025-11-20 01:51:26 [INFO]: Environment: development
+2025-11-20 01:54:04 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 01:54:04 [INFO]: New registration session created: whatsapp_1763600044325_741c72e9 for +2347089426215
+2025-11-20 01:54:04 [INFO]: Launched testwhatsapp.js for session whatsapp_1763600044325_741c72e9 as PID 17128
+2025-11-20 02:17:54 [INFO]: Redis: Connecting...
+2025-11-20 02:17:54 [INFO]: Redis: Connected and ready
+2025-11-20 02:17:54 [INFO]: Middlewares initialized
+2025-11-20 02:17:54 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 02:17:54 [INFO]: Routes initialized
+2025-11-20 02:17:54 [INFO]: Server running on port 3000
+2025-11-20 02:17:54 [INFO]: Environment: development
+2025-11-20 02:18:26 [INFO]: Server stopped
+2025-11-20 02:18:26 [INFO]: Redis: Disconnected
+2025-11-20 02:18:33 [INFO]: Redis: Connecting...
+2025-11-20 02:18:33 [INFO]: Redis: Connected and ready
+2025-11-20 02:18:33 [INFO]: Middlewares initialized
+2025-11-20 02:18:33 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 02:18:33 [INFO]: Routes initialized
+2025-11-20 02:18:33 [INFO]: Server running on port 3000
+2025-11-20 02:18:33 [INFO]: Environment: development
+2025-11-20 02:20:41 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 02:20:41 [INFO]: New registration session created: whatsapp_1763601641612_0d2c4887 for +2347089426215
+2025-11-20 02:20:41 [WARN]: Redis update failed:
+2025-11-20 02:20:41 [INFO]: [whatsapp_1763601641612_0d2c4887] Spawning registration child: node C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\testwhatsapp.js (phone=+2347089426215)
+2025-11-20 02:20:41 [INFO]: Launched testwhatsapp.js for session whatsapp_1763601641612_0d2c4887 as PID 20432
+2025-11-20 02:20:41 [ERROR]: [child whatsapp_1763601641612_0d2c4887] node:internal/modules/cjs/loader:1247
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\testwhatsapp.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+2025-11-20 02:20:41 [ERROR]: [child whatsapp_1763601641612_0d2c4887] Node.js v22.13.1
+2025-11-20 02:20:41 [INFO]: [child whatsapp_1763601641612_0d2c4887] exited with code=1 signal=null
+2025-11-20 02:24:03 [INFO]: Redis: Connecting...
+2025-11-20 02:24:04 [INFO]: Redis: Connected and ready
+2025-11-20 02:24:04 [INFO]: Middlewares initialized
+2025-11-20 02:24:04 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 02:24:04 [INFO]: Routes initialized
+2025-11-20 02:24:04 [INFO]: Server running on port 3000
+2025-11-20 02:24:04 [INFO]: Environment: development
+2025-11-20 02:24:27 [INFO]: Server stopped
+2025-11-20 02:24:33 [INFO]: Redis: Connecting...
+2025-11-20 02:24:33 [INFO]: Redis: Connected and ready
+2025-11-20 02:24:33 [INFO]: Middlewares initialized
+2025-11-20 02:24:33 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 02:24:33 [INFO]: Routes initialized
+2025-11-20 02:24:33 [INFO]: Server running on port 3000
+2025-11-20 02:24:33 [INFO]: Environment: development
+2025-11-20 03:12:44 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 03:12:44 [INFO]: New registration session created: whatsapp_1763604764471_a8e1d068 for +2347089426215
+2025-11-20 03:12:44 [INFO]: [whatsapp_1763604764471_a8e1d068] Starting registration for +2347089426215
+2025-11-20 03:12:44 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:36:12)
+    at exports.registerAccount (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:165:29)
+    at Layer.handleRequest (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\index.js:295:15
+2025-11-20 03:12:44 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 03:12:46 [INFO]: ADB devices output: List of devices attached
+emulator-5554	offline
+2025-11-20 03:12:46 [INFO]: Connecting ADB to 127.0.0.1:7555...
+2025-11-20 03:12:53 [INFO]: [whatsapp_1763604764471_a8e1d068] Emulator ready
+2025-11-20 03:12:53 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:45:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 03:13:30 [INFO]: [whatsapp_1763604764471_a8e1d068] Appium session started
+2025-11-20 03:13:30 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:59:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 03:13:35 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:69:12)
+2025-11-20 03:13:39 [INFO]: [whatsapp_1763604764471_a8e1d068] Country code entered: 234
+2025-11-20 03:13:39 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:84:12)
+2025-11-20 03:13:42 [INFO]: [whatsapp_1763604764471_a8e1d068] Phone number entered: 7089426215
+2025-11-20 03:13:42 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:98:12)
+2025-11-20 03:13:44 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:107:12)
+2025-11-20 03:13:53 [INFO]: [whatsapp_1763604764471_a8e1d068] Confirmed via selector: android=new UiSelector().resourceId("android:id/button1")
+2025-11-20 03:13:53 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:132:12)
+2025-11-20 03:13:54 [INFO]: Found 'verify another way' button via selector: android=new UiSelector().textContains("Verify another") — clicking it
+2025-11-20 03:13:57 [INFO]: Selecting verification method: "Receive SMS" (selector: android=new UiSelector().textContains("Receive SMS"))
+2025-11-20 03:13:59 [INFO]: Clicking final continue/confirm button via android=new UiSelector().textContains("Continue")
+2025-11-20 03:14:01 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:137:12)
+2025-11-20 03:14:09 [INFO]: [whatsapp_1763604764471_a8e1d068] OTP input screen detected - READY FOR OTP
+2025-11-20 03:14:09 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:146:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 03:14:09 [INFO]: [whatsapp_1763604764471_a8e1d068] registrationService.startRegistration finished
+2025-11-20 03:20:27 [INFO]: Redis: Connecting...
+2025-11-20 03:20:27 [INFO]: Redis: Connected and ready
+2025-11-20 03:20:27 [INFO]: Middlewares initialized
+2025-11-20 03:20:27 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 03:20:27 [INFO]: Routes initialized
+2025-11-20 03:20:27 [INFO]: Server running on port 3000
+2025-11-20 03:20:27 [INFO]: Environment: development
+2025-11-20 03:25:50 [INFO]: Redis: Connecting...
+2025-11-20 03:25:50 [INFO]: Redis: Connected and ready
+2025-11-20 03:25:50 [INFO]: Middlewares initialized
+2025-11-20 03:25:50 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 03:25:50 [INFO]: Routes initialized
+2025-11-20 03:25:50 [INFO]: Server running on port 3000
+2025-11-20 03:25:50 [INFO]: Environment: development
+2025-11-20 03:28:43 [INFO]: Redis: Connecting...
+2025-11-20 03:28:43 [INFO]: Redis: Connected and ready
+2025-11-20 03:28:43 [INFO]: Middlewares initialized
+2025-11-20 03:28:43 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 03:28:43 [INFO]: Routes initialized
+2025-11-20 03:28:43 [INFO]: Server running on port 3000
+2025-11-20 03:28:43 [INFO]: Environment: development
+2025-11-20 03:28:53 [INFO]: Server stopped
+2025-11-20 03:28:53 [INFO]: Redis: Disconnected
+2025-11-20 03:28:59 [INFO]: Redis: Connecting...
+2025-11-20 03:28:59 [INFO]: Redis: Connected and ready
+2025-11-20 03:28:59 [INFO]: Middlewares initialized
+2025-11-20 03:28:59 [INFO]: Mounted OTP routes at /whatsapp
+2025-11-20 03:28:59 [INFO]: Routes initialized
+2025-11-20 03:28:59 [INFO]: Server running on port 3000
+2025-11-20 03:28:59 [INFO]: Environment: development
+2025-11-20 03:30:44 [WARN]: Redis storage failed, continuing with in-memory only:
+2025-11-20 03:30:44 [INFO]: New registration session created: whatsapp_1763605844288_b9b08df4 for +2347089426215
+2025-11-20 03:30:44 [INFO]: [whatsapp_1763605844288_b9b08df4] Starting registration for +2347089426215
+2025-11-20 03:30:44 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:30:44 [INFO]: Checking emulator at 127.0.0.1:7555
+2025-11-20 03:30:44 [INFO]: ADB devices output: List of devices attached
+127.0.0.1:7555	device
+emulator-5554	device
+2025-11-20 03:30:44 [INFO]: Emulator already connected
+2025-11-20 03:30:44 [INFO]: [whatsapp_1763605844288_b9b08df4] Emulator ready
+2025-11-20 03:30:44 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:16 [INFO]: [whatsapp_1763605844288_b9b08df4] Appium session started
+2025-11-20 03:31:16 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:19 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:23 [INFO]: [whatsapp_1763605844288_b9b08df4] Country code entered: 234
+2025-11-20 03:31:23 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:25 [INFO]: [whatsapp_1763605844288_b9b08df4] Phone number entered: 7089426215
+2025-11-20 03:31:25 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:28 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:33 [INFO]: [whatsapp_1763605844288_b9b08df4] Confirmed via selector: android=new UiSelector().resourceId("android:id/button1")
+2025-11-20 03:31:33 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:
+2025-11-20 03:31:34 [INFO]: Found 'verify another way' button via selector: android=new UiSelector().textContains("Verify another") — clicking it
+2025-11-20 03:31:36 [INFO]: Selecting verification method: "Receive SMS" (selector: android=new UiSelector().textContains("Receive SMS"))
+2025-11-20 03:31:37 [INFO]: Clicking final continue/confirm button via android=new UiSelector().textContains("Continue")
+2025-11-20 03:31:39 [WARN]: Failed to update Redis for whatsapp_1763605844288_b9b08df4:

@@ -13712,3 +13712,86 @@ Error: connect ECONNREFUSED 127.0.0.1:6379
 2025-11-18 11:37:33 [ERROR]: Redis error: connect ECONNREFUSED 127.0.0.1:6379 {"errno":-4078,"code":"ECONNREFUSED","syscall":"connect","address":"127.0.0.1","port":6379}
 Error: connect ECONNREFUSED 127.0.0.1:6379
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1634:16)
+2025-11-20 02:20:41 [ERROR]: [child whatsapp_1763601641612_0d2c4887] node:internal/modules/cjs/loader:1247
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\testwhatsapp.js'
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1244:15)
+    at Function._load (node:internal/modules/cjs/loader:1070:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+2025-11-20 02:20:41 [ERROR]: [child whatsapp_1763601641612_0d2c4887] Node.js v22.13.1
+2025-11-20 03:12:44 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:36:12)
+    at exports.registerAccount (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:165:29)
+    at Layer.handleRequest (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\NEW USER\Desktop\whatsapp-otp-bot\node_modules\router\index.js:295:15
+2025-11-20 03:12:53 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:45:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 03:13:30 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:59:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-11-20 03:13:35 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:69:12)
+2025-11-20 03:13:39 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:84:12)
+2025-11-20 03:13:42 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:98:12)
+2025-11-20 03:13:44 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:107:12)
+2025-11-20 03:13:53 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:132:12)
+2025-11-20 03:14:01 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:137:12)
+2025-11-20 03:14:09 [ERROR]: Failed to update Redis for whatsapp_1763604764471_a8e1d068: redis.setex is not a function
+TypeError: redis.setex is not a function
+    at RegistrationService.<anonymous> (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\api\controllers\otp.controller.js:86:19)
+    at RegistrationService.emit (node:events:524:28)
+    at RegistrationService.emit (node:domain:489:12)
+    at RegistrationService.startRegistration (C:\Users\NEW USER\Desktop\whatsapp-otp-bot\src\services\RegistrationService.js:146:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
