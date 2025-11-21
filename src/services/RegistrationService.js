@@ -3,7 +3,7 @@ const { remote } = require('webdriverio');
 const logger = require('../utils/logger');
 const { checkEmulator, retry } = require('../utils/emulator');
 const { handleAlternateVerificationFlow } = require('./whatsappHelpers');
-const {storeMessages} = require('./messages.controller');
+const sessionManager = require('./PersistentSessionManager');
 
 class RegistrationService extends EventEmitter {
   constructor() {
@@ -54,7 +54,11 @@ class RegistrationService extends EventEmitter {
       });
       logger.info(`[${sessionId}] Appium session started`);
 
-      // Store driver for later use
+      // Register with persistent session manager (FIXED: Do this BEFORE storing in activeSessions)
+      sessionManager.registerSession(phoneNumber, driver, sessionId);
+      logger.info(`[${sessionId}] Session registered with PersistentSessionManager`);
+
+      // Store driver for later use in this service
       this.activeSessions.set(sessionId, { driver, phoneNumber, countryCode });
 
       this.emit('status', { sessionId, status: 'agreeing_terms' });
@@ -157,7 +161,11 @@ class RegistrationService extends EventEmitter {
       
       // Clean up driver
       if (driver) {
-        try { await driver.deleteSession(); } catch (e) {}
+        try { 
+          await driver.deleteSession(); 
+        } catch (e) {
+          logger.warn(`[${sessionId}] Error closing driver:`, e.message);
+        }
       }
       this.activeSessions.delete(sessionId);
 
@@ -199,30 +207,50 @@ class RegistrationService extends EventEmitter {
       // Check if OTP was accepted (profile setup screen appears)
       this.emit('status', { sessionId, status: 'setting_up_profile' });
 
-      // Profile setup
+      // Profile setup - Enter random name
       try {
-        const name = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_name")');
-        if (await name.isDisplayed()) {
-          await name.setValue('Bot');
-          const done = await driver.$('android=new UiSelector().text("Done")');
-          await done.click();
-          await driver.pause(2000);
-          logger.info(`[${sessionId}] Profile setup completed`);
+        const nameField = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/registration_name")');
+        if (await nameField.isDisplayed()) {
+          // Generate random name
+          const names = ['Sofia', 'Marco', 'Yuki', 'Amara', 'Chen', 'Lara', 'Ahmed', 'Priya'];
+          const randomName = names[Math.floor(Math.random() * names.length)];
+          
+          await nameField.click();
+          await driver.pause(300);
+          await nameField.clearValue();
+          await driver.pause(200);
+          await nameField.setValue(randomName);
+          await driver.pause(500);
+          logger.info(`[${sessionId}] Entered random name: ${randomName}`);
+          
+          // Click Done button
+          try {
+            const doneBtn = await driver.$('android=new UiSelector().text("Done")');
+            if (await doneBtn.isDisplayed()) {
+              await doneBtn.click();
+              await driver.pause(2000);
+              logger.info(`[${sessionId}] Name submitted`);
+            }
+          } catch (e) {
+            logger.info(`[${sessionId}] No Done button found after name entry`);
+          }
         }
       } catch (e) {
-        logger.info(`[${sessionId}] No profile setup needed`);
+        logger.info(`[${sessionId}] No name input field found`);
       }
 
       this.emit('status', { sessionId, status: 'skipping_backup' });
 
-      // Skip backup
+      // Skip backup/email prompts
       try {
-        const skip = await driver.$('android=new UiSelector().textContains("Skip")');
-        await skip.waitForDisplayed({ timeout: 10000 });
-        await skip.click();
-        logger.info(`[${sessionId}] Backup skipped`);
+        const skipBtn = await driver.$('android=new UiSelector().textContains("Skip")');
+        if (await skipBtn.isDisplayed()) {
+          await skipBtn.click();
+          await driver.pause(2000);
+          logger.info(`[${sessionId}] Backup/Email skipped`);
+        }
       } catch (e) {
-        logger.info(`[${sessionId}] No backup prompt`);
+        logger.info(`[${sessionId}] No skip button for backup`);
       }
 
       this.emit('status', { sessionId, status: 'verifying_completion' });
@@ -235,13 +263,15 @@ class RegistrationService extends EventEmitter {
         logger.info(`[${sessionId}] Registration may be complete (New chat not found)`);
       }
 
-      // Clean up
-      await driver.deleteSession();
-      this.activeSessions.delete(sessionId);
-
-      
+      // Extract messages BEFORE closing driver
       logger.info(`[${sessionId}] WhatsApp setup complete, extracting messages...`);
-      await this.extractAndStoreMessages(sessionId);
+      const messages = await this.extractAndStoreMessages(sessionId, phoneNumber);
+      logger.info(`[${sessionId}] Messages extracted: ${messages ? messages.length : 0}`);
+
+      // Close driver after message extraction
+      await driver.deleteSession();
+      logger.info(`[${sessionId}] Driver session closed`);
+      this.activeSessions.delete(sessionId);
 
       this.emit('status', { sessionId, status: 'registered' });
 
@@ -249,6 +279,7 @@ class RegistrationService extends EventEmitter {
         success: true,
         status: 'registered',
         phoneNumber,
+        messagesExtracted: messages ? messages.length : 0,
         message: 'WhatsApp account successfully registered'
       };
 
@@ -257,13 +288,84 @@ class RegistrationService extends EventEmitter {
 
       // Clean up
       if (driver) {
-        try { await driver.deleteSession(); } catch (e) {}
+        try { 
+          await driver.deleteSession(); 
+        } catch (e) {
+          logger.warn(`[${sessionId}] Error closing driver:`, e.message);
+        }
       }
       this.activeSessions.delete(sessionId);
 
       this.emit('status', { sessionId, status: 'failed', error: error.message });
 
       throw error;
+    }
+  }
+
+  /**
+   * Extract and store messages from WhatsApp
+   * Stores both in controller AND in PersistentSessionManager
+   */
+  async extractAndStoreMessages(sessionId, phoneNumber) {
+    try {
+      if (!this.activeSessions.has(sessionId)) {
+        logger.warn(`[${sessionId}] No active session for message extraction`);
+        return null;
+      }
+
+      const { driver } = this.activeSessions.get(sessionId);
+      if (!driver) {
+        logger.warn(`[${sessionId}] No driver available for message extraction`);
+        return null;
+      }
+
+      logger.info(`[${sessionId}] Extracting messages for phone: ${phoneNumber}...`);
+
+      // Wait for UI to settle
+      await driver.pause(1000);
+
+      // Get all message elements
+      const messageElements = await driver.$$('android=new UiSelector().resourceId("com.whatsapp:id/chat_list_item_line")');
+      
+      logger.info(`[${sessionId}] Found ${messageElements.length} message elements`);
+
+      const messages = [];
+
+      // Extract each message
+      for (let i = 0; i < messageElements.length; i++) {
+        try {
+          const messageText = await messageElements[i].getText();
+          
+          if (messageText && messageText.trim()) {
+            messages.push({
+              index: i,
+              text: messageText,
+              timestamp: new Date().toISOString()
+            });
+            
+            logger.info(`[${sessionId}] Message ${i + 1}: ${messageText.substring(0, 100)}...`);
+          }
+        } catch (e) {
+          logger.warn(`[${sessionId}] Failed to extract message ${i}:`, e.message);
+        }
+      }
+
+      // Store messages in PersistentSessionManager (by phone number - PERSISTS!)
+      if (messages.length > 0) {
+        sessionManager.storeMessages(phoneNumber, messages);
+        logger.info(`[${sessionId}] Stored ${messages.length} messages in PersistentSessionManager for phone: ${phoneNumber}`);
+        
+        // Emit event so API knows messages are available
+        this.emit('messages_updated', { sessionId, phoneNumber, count: messages.length });
+      } else {
+        logger.info(`[${sessionId}] No messages found to extract`);
+      }
+
+      return messages;
+
+    } catch (error) {
+      logger.error(`[${sessionId}] Failed to extract messages:`, error);
+      return null;
     }
   }
 
@@ -276,6 +378,7 @@ class RegistrationService extends EventEmitter {
     if (session && session.driver) {
       try {
         await session.driver.deleteSession();
+        logger.info(`[${sessionId}] Driver closed`);
       } catch (e) {
         logger.warn(`[${sessionId}] Error closing driver:`, e.message);
       }
@@ -287,78 +390,16 @@ class RegistrationService extends EventEmitter {
     logger.info(`[${sessionId}] Session cancelled`);
   }
 
-
   /**
- * Extract and store messages from WhatsApp
- */
-async extractAndStoreMessages(sessionId) {
-  try {
-    if (!this.activeSessions.has(sessionId)) {
-      logger.warn(`[${sessionId}] No active session for message extraction`);
-      return null;
-    }
-
-    const { driver } = this.activeSessions.get(sessionId);
-    if (!driver) {
-      logger.warn(`[${sessionId}] No driver available for message extraction`);
-      return null;
-    }
-
-    logger.info(`[${sessionId}] Extracting messages...`);
-
-    // Wait for UI to settle
-    await driver.pause(1000);
-
-    // Get all message elements
-    const messageElements = await driver.$$('android=new UiSelector().resourceId("com.whatsapp:id/chat_list_item_line")');
-    
-    logger.info(`[${sessionId}] Found ${messageElements.length} message elements`);
-
-    const messages = [];
-
-    // Extract each message
-    for (let i = 0; i < messageElements.length; i++) {
-      try {
-        const messageText = await messageElements[i].getText();
-        
-        if (messageText && messageText.trim()) {
-          messages.push({
-            index: i,
-            text: messageText,
-            timestamp: new Date().toISOString()
-          });
-          
-          logger.info(`[${sessionId}] Message ${i + 1}: ${messageText.substring(0, 100)}...`);
-        }
-      } catch (e) {
-        logger.warn(`[${sessionId}] Failed to extract message ${i}:`, e.message);
-      }
-    }
-
-    // Store messages in controller
-    if (messages.length > 0) {
-      storeMessages(sessionId, messages);
-      logger.info(`[${sessionId}] Stored ${messages.length} messages`);
-      
-      // Emit event so API knows messages are available
-      this.emit('messages_updated', { sessionId, count: messages.length });
-    }
-
-    return messages;
-
-  } catch (error) {
-    logger.error(`[${sessionId}] Failed to extract messages:`, error);
-    return null;
-  }
-}
-
-
-//  Get active session count
+   * Get active session count
+   */
   getActiveSessionCount() {
     return this.activeSessions.size;
   }
 
-// Check if session exists
+  /**
+   * Check if session exists
+   */
   hasSession(sessionId) {
     return this.activeSessions.has(sessionId);
   }
